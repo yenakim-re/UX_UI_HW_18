@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+}
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+  text-align: left;
+}
+h1 {
+  font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+h2, h3, h4 {
+  font-family: 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+/*NAVBAR*/
+header {
+  width: 100%;
+  background-color: hsla(0, 0%, 100%, 0.783); /* opacity */
+  text-align: right;
+  position: fixed;
+}
+header ul {
+  margin-right: auto;
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 1.5%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+header li {
+  float: left;
+  font-family: monospace;
+  font-size: large;
+  padding: 15px;
+  padding-top: 20px;
+}
+header p {
+  display: inline-block;
+}
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+}
+.logo {
+  width: 23%;
+  text-align: left;
+  float: left;
+}
+.logo img {
+  width: 120px;
+  margin-left: 0px;
+  margin-top: 15px;
+  padding-left: 14%;
+}
+
+/*HERO*/
+.hero {
+  background-color: whitesmoke;
+}
+.heroImg {
+  height: 600px;
+  padding: 25px;
+}
+.content {
+  width: 500px;
+  margin: 0 auto;
+  padding: 62px;
+  padding-top: 100px;
+  text-align: center;
+}
+.content img {
+  height: 300px;
+}
+.content h1 {
+  margin-bottom: 0;
+}
+.content h3 {
+  margin-top: 8px;
+}
+.content button {
+  background-color: #F4C2DE;  
+  fill-opacity: inherit;
+  padding: 13px 20px;
+  font-size: larger;
+  border-color: transparent;
+  border-radius: 50px;
+  font-family: monospace;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* UX Skills Section */
+.flexContainer {
+  display: flex;
+  padding: 0px 125px;
+  background-color:white;
+}
+.flexContainer div{
+  padding: 20px 50px;
+  padding-bottom: 50px;
+}
+.uxSkills h1 {
+  padding-top: 30px;
+}
+.flexContainer h3 {
+  padding-top: 30px;
+}
+.flexContainer img {
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+/* My Work Section */
+.myWork {
+  padding: 30px 30px;
+  background-color: whitesmoke;
+}
+.workGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+  "img1 content1"
+  "img2 content2"
+  "img3 content3"
+  ;
+}
+
+.workGrid img {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+.img1 {
+  grid-area: img1;
+ /*background: linear-gradient(to bottom, whitesmoke 0%, #EDFFEA 100%);*/
+}
+.img2 {
+  grid-area: img2;
+}
+.img3 {
+  grid-area: img3;
+}
+.img1, .img2, .img3 {
+  padding: 40px 40px 50px 150px;
+}
+.content1, .content2, .content3 {
+  padding: 55px 150px 50px 150px;
+}
+.img1 img {
+  max-width: 100%;
+  height: auto;
+}
+.img2 img {
+  max-width: 100%;
+  height: auto;
+}
+.img3 img {
+  max-width: 100%;
+  height: auto;
+}
+.content1 {
+  grid-area: content1;
+}
+.content1 button {
+  background-color: #C8E5C3;
+  padding: 2%;
+  font-size: large;
+  border-color: transparent;
+  border-radius: 30px;
+  font-family: monospace;
+  font-weight: bold;
+}
+.content1 h3 {
+  margin-bottom: 0;
+}
+.content2 {
+  grid-area: content2;
+}
+.content2 button {
+  background-color: #B89CC2;
+  padding: 2%;
+  font-size: large;
+  border-color: transparent;
+  border-radius: 30px;
+  font-family: monospace;
+  font-weight: bold;
+}
+.content3 {
+  grid-area: content3;
+}
+.content3 button {
+  background-color: rgb(119, 184, 204);
+  padding: 2%;
+  font-size: large;
+  border-color: transparent;
+  border-radius: 30px;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+/*CONTACT INFO*/
+.contactInfo .flexContainer button {
+  background: transparent;
+  border: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*FOOTER*/
+footer {
+  background: linear-gradient(to bottom, whitesmoke 0%, #F4F9FC 18%, #F4E1FB 55%, #F4C2DE 100%);
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+footer ul {
+  align-self: auto;
+  display: inline-block;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+footer li {
+  float: left;
+  padding: 14px 15px;
+}
+footer img {
+  width: 44px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+footer button {
+  border: transparent;
+  margin: 0 auto;
+  background: transparent;
+}
+footer p {
+  float: right;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  text-size-adjust: smaller;
+}
+
+
