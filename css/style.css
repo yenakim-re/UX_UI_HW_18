@@ -28,6 +28,8 @@ h4 {
   text-align: center;
   font-size: 22px;
   margin-top: 8px;
+  margin-bottom: 0;
+  font-weight: lighter;
 }
 /*NAVBAR*/
 header {
@@ -82,7 +84,7 @@ header p {
   width: 600px;
   margin: 0 auto;
   padding: 50px;
-  padding-top: 100px;
+  padding-top: 95px;
   text-align: center;
 }
 .content img {
