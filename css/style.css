@@ -3,15 +3,17 @@ body {
 }
 p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-  "Lucida Sans", Arial, sans-serif;
+    "Lucida Sans", Arial, sans-serif;
   text-align: left;
 }
 h1 {
-  font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   text-align: center;
 }
-h2, h3, h4 {
-  font-family: 'Lucida Sans', Arial, sans-serif;
+h2,
+h3,
+h4 {
+  font-family: "Lucida Sans", Arial, sans-serif;
   text-align: center;
 }
 /*NAVBAR*/
@@ -80,7 +82,7 @@ header p {
   margin-top: 8px;
 }
 .content button {
-  background-color: #F4C2DE;  
+  background-color: #f4c2de;
   fill-opacity: inherit;
   padding: 13px 20px;
   font-size: larger;
@@ -95,9 +97,9 @@ header p {
 .flexContainer {
   display: flex;
   padding: 0px 125px;
-  background-color:white;
+  background-color: white;
 }
-.flexContainer div{
+.flexContainer div {
   padding: 20px 50px;
   padding-bottom: 50px;
 }
@@ -124,10 +126,9 @@ header p {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-areas:
-  "img1 content1"
-  "img2 content2"
-  "img3 content3"
-  ;
+    "img1 content1"
+    "img2 content2"
+    "img3 content3";
 }
 .workGrid img {
   width: 100%;
@@ -138,7 +139,7 @@ header p {
 }
 .img1 {
   grid-area: img1;
- /*background: linear-gradient(to bottom, whitesmoke 0%, #EDFFEA 100%);*/
+  /*background: linear-gradient(to bottom, whitesmoke 0%, #EDFFEA 100%);*/
 }
 .img2 {
   grid-area: img2;
@@ -146,10 +147,14 @@ header p {
 .img3 {
   grid-area: img3;
 }
-.img1, .img2, .img3 {
+.img1,
+.img2,
+.img3 {
   padding: 40px 40px 50px 150px;
 }
-.content1, .content2, .content3 {
+.content1,
+.content2,
+.content3 {
   padding: 55px 150px 50px 150px;
 }
 .img1 img {
@@ -174,7 +179,7 @@ header p {
   grid-area: content2;
 }
 .content1 button {
-  background-color: #C8E5C3;
+  background-color: #c8e5c3;
   padding: 2%;
   font-size: large;
   border-color: transparent;
@@ -183,7 +188,7 @@ header p {
   font-weight: bold;
 }
 .content2 button {
-  background-color: #B89CC2;
+  background-color: #b89cc2;
   padding: 2%;
   font-size: large;
   border-color: transparent;
@@ -215,7 +220,13 @@ header p {
 
 /*FOOTER*/
 footer {
-  background: linear-gradient(to bottom, whitesmoke 0%, #F4F9FC 18%, #F4E1FB 55%, #F4C2DE 100%);
+  background: linear-gradient(
+    to bottom,
+    whitesmoke 0%,
+    #f4f9fc 18%,
+    #f4e1fb 55%,
+    #f4c2de 100%
+  );
   width: 100%;
   display: inline-block;
   vertical-align: top;
@@ -252,10 +263,10 @@ footer p {
 }
 
 /* MOBILE MEDIA QUERY */
-@media only screen and (max-width: 600){
+@media only screen and (max-width: 600) {
   p {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+      "Lucida Sans", Arial, sans-serif;
     text-align: left;
     font-size: 20px;
   }
@@ -267,7 +278,7 @@ footer p {
     text-align: center;
   }
   .content button {
-    background-color: #F4C2DE;  
+    background-color: #f4c2de;
     fill-opacity: inherit;
     padding: 13px 20px;
     font-size: xx-large;
@@ -282,69 +293,71 @@ footer p {
     font-size: 20px;
   }
   .flexContainer {
-    FONT-WEIGHT: 100;
+    font-weight: 100;
     display: flex;
     flex-direction: column;
     padding: 0px 125px;
-    background-color:white;
+    background-color: white;
     width: 100%;
   }
   .workGrid {
     grid-template-rows: 300px 300px 300px 300px 300px 300px;
     grid-template-columns: 1fr;
-    grid-template-areas:         
-    "img1"
-    "content1"
-    "img2"
-    "content2"
-    "img3"
-    "content3";
-;
+    grid-template-areas:
+      "img1"
+      "content1"
+      "img2"
+      "content2"
+      "img3"
+      "content3";
   }
-  .img1, .img2, .img3 {
+  .img1,
+  .img2,
+  .img3 {
     padding: 40px 150px;
-}
-  .content1, .content2, .content3 {
+  }
+  .content1,
+  .content2,
+  .content3 {
     padding: 55px 150px 50px 150px;
+  }
+  .content1 button {
+    background-color: #c8e5c3;
+    padding: 2%;
+    font-size: xx-large;
+    border-color: transparent;
+    border-radius: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    margin-right: 300px;
+    float: right;
+  }
+  .content2 button {
+    background-color: #b89cc2;
+    padding: 2%;
+    font-size: xx-large;
+    border-color: transparent;
+    border-radius: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    margin-right: 300px;
+    float: right;
+  }
+  .content3 button {
+    background-color: rgb(119, 184, 204);
+    padding: 2%;
+    font-size: xx-large;
+    border-color: transparent;
+    border-radius: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    margin-right: 300px;
+    float: right;
+  }
 }
-.content1 button {
-  background-color: #C8E5C3;
-  padding: 2%;
-  font-size: xx-large;
-  border-color: transparent;
-  border-radius: 30px;
-  font-family: monospace;
-  font-weight: bold;
-  margin-top: 30px;
-  margin-bottom: 150px;
-  margin-right: 300px;
-  float: right;
-}
-.content2 button {
-  background-color: #B89CC2;
-  padding: 2%;
-  font-size: xx-large;
-  border-color: transparent;
-  border-radius: 30px;
-  font-family: monospace;
-  font-weight: bold;
-  margin-top: 30px;
-  margin-bottom: 150px;
-  margin-right: 300px;
-  float: right;
-}
-.content3 button {
-  background-color: rgb(119, 184, 204);
-  padding: 2%;
-  font-size: xx-large;
-  border-color: transparent;
-  border-radius: 30px;
-  font-family: monospace;
-  font-weight: bold;
-  margin-top: 30px;
-  margin-bottom: 150px;
-  margin-right: 300px;
-  float: right;
-}
-}
-
