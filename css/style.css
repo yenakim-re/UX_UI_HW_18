@@ -98,6 +98,8 @@ header p {
   display: flex;
   padding: 0px 125px;
   background-color: white;
+  align-items: center;
+  justify-content: space-around;
 }
 .flexContainer div {
   padding: 15px 25px;
@@ -110,11 +112,10 @@ header p {
   padding-top: 30px;
 }
 .flexContainer img {
-  height: 190px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  max-height:190px;
   margin: auto;
+  align-items: center;
+  display: block;
 }
 
 /* My Work Section */
@@ -132,6 +133,7 @@ header p {
     "img1 content1"
     "img2 content2"
     "img3 content3";
+    align-items: center;
 }
 .workGrid img {
   width: 100%;
@@ -226,7 +228,7 @@ footer {
   );
   width: 100%;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: center;
 }
 footer ul {
   align-self: auto;
@@ -260,10 +262,12 @@ footer p {
 }
 
 /* MOBILE MEDIA QUERY */
-@media only screen and (max-width: 600px) {
+@media all and (max-width: 600px) {
+  body {
+    width: fit-content;
+  }
   p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: left;
     font-size: 20px;
   }
@@ -278,7 +282,6 @@ footer p {
     background-color: #f4c2de;
     fill-opacity: inherit;
     padding: 10px 20px;
-    font-size: xx-large;
     border-color: transparent;
     border-radius: 50px;
     font-family: monospace;
@@ -286,20 +289,22 @@ footer p {
     margin-top: 8px;
     margin-bottom: 70px;
   }
-  .workGrid p {
-    font-size: 20px;
-  }
   .flexContainer {
-    font-weight: 100;
     display: flex;
-    flex-direction: column;
     padding: 0px 125px;
     background-color: white;
-    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .flexContainer img {
+    margin: 0 auto;
+    margin: 0px 125;
+    padding: 0 150px;
   }
   .workGrid {
-    grid-template-rows: 300px 300px 300px 300px 300px 300px;
-    grid-template-columns: 1fr;
+    grid-template-rows: 16% 16% 16% 16% 16% 16%;
+    grid-template-columns: auto;
     grid-template-areas:
       "img1"
       "content1"
@@ -307,52 +312,18 @@ footer p {
       "content2"
       "img3"
       "content3";
+      align-items: center;
   }
-  .img1,.img2,.img3 {
-    padding: 40px 150px;
+  .workGrid img {
+    height: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
   }
   .content1,
   .content2,
   .content3 {
     padding: 55px 150px 50px 150px;
-  }
-  .content1 button {
-    background-color: #c8e5c3;
-    padding: 2%;
-    font-size: xx-large;
-    border-color: transparent;
-    border-radius: 30px;
-    font-family: monospace;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 150px;
-    margin-right: 300px;
-    float: right;
-  }
-  .content2 button {
-    background-color: #b89cc2;
-    padding: 2%;
-    font-size: xx-large;
-    border-color: transparent;
-    border-radius: 30px;
-    font-family: monospace;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 150px;
-    margin-right: 300px;
-    float: right;
-  }
-  .content3 button {
-    background-color: rgb(119, 184, 204);
-    padding: 2%;
-    font-size: xx-large;
-    border-color: transparent;
-    border-radius: 30px;
-    font-family: monospace;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 150px;
-    margin-right: 300px;
-    float: right;
   }
 }
