@@ -66,7 +66,7 @@ header p {
   padding: 25px;
 }
 .content {
-  width: 625px;
+  width: 600px;
   margin: 0 auto;
   padding: 50px;
   padding-top: 100px;
@@ -98,12 +98,13 @@ header p {
   display: flex;
   padding: 0px 125px;
   background-color: white;
-  align-items: center;
+  align-items: top;
   justify-content: space-around;
 }
 .flexContainer div {
-  padding: 15px 25px;
+  padding: 15px 30px;
   padding-bottom: 50px;
+  width: fit-content;
 }
 .uxSkills h1 {
   padding-top: 30px;
@@ -120,7 +121,7 @@ header p {
 
 /* My Work Section */
 .myWork {
-  padding: 30px 30px;
+  padding: 30px 140px;
   background-color: whitesmoke;
 }
 .myWork h1 {
@@ -128,7 +129,7 @@ header p {
 }
 .workGrid {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 53% 47%;
   grid-template-areas:
     "img1 content1"
     "img2 content2"
@@ -140,7 +141,6 @@ header p {
   max-width: 250px;
   margin: 0 auto;
   display: block;
-  text-align: center;
 }
 .img1 {
   grid-area: img1;
@@ -153,10 +153,12 @@ header p {
   grid-area: img3;
 }
 .img1, .img2, .img3 {
-  padding: 40px 40px 50px 150px;
+  padding: 60px 50px 80px 0;
 }
 .content1, .content2, .content3 {
-  padding: 50px 150px 50px 150px;
+  padding-left: 70px;
+  padding-right: 24px;
+ 
 }
 .img1 img {
   max-width: 100%;
@@ -293,7 +295,7 @@ footer p {
     display: flex;
     padding: 0px 125px;
     background-color: white;
-    align-items: center;
+    align-items: top;
     justify-content: space-around;
     flex-direction: column;
   }
