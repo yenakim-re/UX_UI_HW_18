@@ -13,7 +13,7 @@ h1 {
   font-size: 36px;
 }
 h2, h3, h4 {
-  font-family: 'Montserrat', 'Manrope', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 /*NAVBAR*/
@@ -154,7 +154,7 @@ header p {
   padding: 40px 40px 50px 150px;
 }
 .content1, .content2, .content3 {
-  padding: 55px 150px 50px 150px;
+  padding: 50px 150px 50px 150px;
 }
 .img1 img {
   max-width: 100%;
