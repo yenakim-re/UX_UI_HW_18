@@ -27,7 +27,7 @@ header ul {
   margin-right: auto;
   display: inline-block;
   list-style-type: none;
-  padding-right: 1.5%;
+  padding-right: 1.6%;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -241,7 +241,7 @@ footer ul {
 }
 footer li {
   float: left;
-  padding: 14px 15px;
+  padding: 14px 14px;
 }
 footer img {
   width: 40px;
@@ -256,7 +256,7 @@ footer button {
 }
 footer p {
   float: right;
-  margin-right: 30px;
+  margin-right: 45px;
   display: flex;
   align-items: center;
   padding-top: 20px;
