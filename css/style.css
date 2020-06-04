@@ -264,7 +264,7 @@ footer p {
 }
 
 /* MOBILE MEDIA QUERY */
-@media only screen and (max-width: 600) {
+@media only screen and (max-width: 600px) {
   p {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
@@ -312,9 +312,7 @@ footer p {
       "img3"
       "content3";
   }
-  .img1,
-  .img2,
-  .img3 {
+  .img1,.img2,.img3 {
     padding: 40px 150px;
   }
   .content1,
