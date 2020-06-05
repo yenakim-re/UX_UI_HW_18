@@ -1,6 +1,5 @@
 body {
-  width: fit-content;
-  margin: 0;
+  margin: 0 auto;
 }
 p {
   font-family: 'Roboto', sans-serif;
@@ -41,7 +40,8 @@ h5 {
 }
 /*NAVBAR*/
 header {
-  width: 100%;
+  margin: 0 auto;
+  width:100%;
   background-color: hsla(0, 0%, 100%, 0.783); /* opacity */
   text-align: right;
   position: fixed;
@@ -50,7 +50,7 @@ header ul {
   margin-right: auto;
   display: inline-block;
   list-style-type: none;
-  padding-right: 1.6%;
+  padding-right: 1.6%; /*FIX ALL TO PX-DON'T USE PERCENTAGE FOR PADDING/MARGIN*/
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -69,7 +69,7 @@ header p {
   vertical-align: top;
 }
 .logo {
-  width: 23%;
+  width: 23%; /*FIX ALL TO PX-DON'T USE PERCENTAGE FOR PADDING/MARGIN*/
   text-align: left;
   float: left;
 }
@@ -119,28 +119,35 @@ header p {
 /* UX Skills Section */
 .flexContainer {
   display: flex;
-  padding: 0px 125px;
+  /*padding: 0px 125px;*/
   background-color: white;
   align-items: top;
   justify-content: space-around;
 }
-.flexContainer div {
-  padding: 15px 30px;
-  padding-bottom: 50px;
-  margin-top: 40px;
-  width: fit-content;
+.uxSkills {
+  margin: 50px 100px;
 }
 .uxSkills h1 {
-  padding-top: 50px;
+  margin-top: 50px;
 }
 .flexContainer h3 {
-  padding-top: 30px;
+  margin-top: 30px;
 }
-.flexContainer img {
-  max-height:190px;
-  margin: auto;
-  align-items: center;
-  display: block;
+.flexContainer div {
+  padding:0 15px;
+  display:flex;
+  flex-direction: column;
+  align-content:top;
+  justify-content:stretch;
+  width:100%;
+  min-width:280px;
+  margin-top: 20px;
+}
+.flexContainer div img {
+  width:100%;
+  max-width:250px;
+  height:166px;
+  margin:0 auto;
 }
 
 /* My Work Section */
@@ -296,19 +303,37 @@ footer p {
   padding-top: 20px;
   text-size-adjust: smaller;
 }
-
-/* MOBILE MEDIA QUERY */
-@media all and (max-width: 600px) {
-  body {
-    width: fit-content;
+@media screen and (min-width: 621px) and (max-width:915px){
+ h3 {
+   font-size:1em;
+ }
+ p{
+   font-size:.8em;
+ }
+  .flexContainer div{
+    min-width: 175px;
   }
+  .flexContainer div img{
+    width:100%;
+    max-width: 150px;
+    height: 95px;
+  margin:0 auto;
+  }
+}
+/* MOBILE MEDIA QUERY */
+@media screen and (max-width: 620px) {
+  /*body {
+    max-width: 100vw;
+    /*overflow-x: hidden;
+  }  */
   p {
     font-family: 'Roboto', sans-serif;
     text-align: left;
     font-size: 20px;
   }
   .content {
-    width: 70%;
+    width: 75%;
+    max-width:550px;
     margin: 0 auto;
     padding: 62px;
     padding-top: 100px;
@@ -326,17 +351,13 @@ footer p {
     margin-bottom: 70px;
   }
   .flexContainer {
-    display: flex;
-    padding: 0px 125px;
-    background-color: white;
-    align-items: top;
-    justify-content: space-around;
     flex-direction: column;
+    justify-content: center;
   }
-  .flexContainer img {
+  .flexContainer div {
+    width:100%;
     margin: 0 auto;
-    margin: 0px 125;
-    padding: 0 150px;
+    margin: 20px 0;
   }
   .workGrid {
     grid-template-rows: 16% 16% 16% 16% 16% 16%;
@@ -360,6 +381,5 @@ footer p {
   .content1,
   .content2,
   .content3 {
-    padding: 55px 150px 50px 150px;
   }
 }
