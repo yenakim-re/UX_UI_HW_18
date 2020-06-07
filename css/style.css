@@ -133,10 +133,10 @@ header p {
   align-items: top;
   justify-content: space-around;
 }
-.uxSkills {
+#uxSkills {
   margin: 50px 100px;
 }
-.uxSkills h1 {
+#uxSkills h1 {
   margin-top: 50px;
 }
 .flexContainer h3 {
@@ -215,15 +215,15 @@ header p {
   background-color: rgb(228, 235, 236);
 }
 .img1 img {
-  max-width: 100%;
+  max-width: 85%;
   height: auto;
 }
 .img2 img {
-  max-width: 100%;
+  max-width: 85%;
   height: auto;
 }
 .img3 img {
-  max-width: 100%;
+  max-width: 85%;
   height: auto;
 }
 .content1 button {
@@ -310,16 +310,16 @@ footer p {
   text-size-adjust: smaller;
 }
 
-@media screen and (min-width: 621px) and (max-width:915px){
+@media screen and (min-width: 621px) and (max-width:1000px){
  h3 {
    font-size:1em;
  }
  p{
    font-size:.8em;
  }
+
   .flexContainer div{
     min-width: 175px;
-    padding-top: 500px;
   }
   .flexContainer div img{
     width:100%;
@@ -368,8 +368,6 @@ footer p {
   }
   #uxSkills {
     margin: 40px 50px 40px 30px;
-   
-
   }
   .flexContainer {
     flex-direction: column;
