@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <html lang="en"></html>
     <title>yenakim.re</title>
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <script src="js/index.js"></script>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');  
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Quicksand:wght@700&family=Ubuntu:wght@700&family=Work+Sans&display=swap');
@@ -15,9 +17,9 @@
     <!-- HEADER/NAVBAR SECTION -->
     <header>
       <div class="inline-block logo"><img src="images/logo.png" alt="yena logo"></div>
-      <ul>
-          <li>About</a></li>
-          <li>Skills</li>
+      <ul class="menu">
+          <li>About</li>
+          <li><a href="#uxSkills">Skills</a></li>
           <li>Work</li>
           <li><b>Contact</b></li>
       </ul>
@@ -34,13 +36,13 @@
               
               <p><b>My <s>tools</s> friends</b>: Figma, Sketch, Adobe XD, Invision, Miro, and Whimsical. Getting to know Zeplin and Framer X. If you chill with a different crowd, I'd love to meet them!</p>
               <h4>KEEP CALM AND SCROLL &#8595;</h4>
-              <button>Download Resume</button>
+              <button class="buttonResume">Download Resume</button>
       </div>
   </heroImg>
 </section>
 
     <!--UX SKILLS-->
-  <section class="uxSkills">
+  <section id="uxSkills">
   <h1 class="heading">UX SKILLS</h1>
     <div class="flexContainer">
       <div>
@@ -72,19 +74,24 @@
         </div>
         <div class="content1">
           <h2>Collabify</h2>
-          <p>Ever heard of Spotify's collaborative playlist feature? Neither had we. A teammate's frustration led to us redesigning the app feature based on solid UX user research. The result? Easy access, user-friendly, and delightful new features. (Or at least we think so!) *<b>Fun Fact</b>: Spotify recently rolled out a beta version similar to our project called <a href="https://www.theverge.com/2020/5/11/21254426/spotify-group-sessions-feature-update-beta-premium-subscription">Group Session</a>.</p>
+          <p>Mobile app redesign of Spotify's collaborative playlist feature.
+          </br></br>*<b>Fun Fact</b>: Spotify recently rolled out a beta version similar to our project called <a href="https://www.theverge.com/2020/5/11/21254426/spotify-group-sessions-feature-update-beta-premium-subscription">Group Session.</a></p>
+          <button >View Project</button>
+          <!--<p>Ever heard of Spotify's collaborative playlist feature? Neither had we. A teammate's frustration led to us redesigning the app feature based on solid UX user research. The result? Easy access, user-friendly, and delightful new features. (Or at least we think so!) *<b>Fun Fact</b>: Spotify recently rolled out a beta version similar to our project called <a href="https://www.theverge.com/2020/5/11/21254426/spotify-group-sessions-feature-update-beta-premium-subscription">Group Session</a>.</p>
           <p><b>Primary Roles:</b> Team Lead, UX/UI Designer (wireframing, prototyping)</p>
           <p><b>Keywords:</b> UX app redesign, interaction design, user research, usability testing, wireframing, UI prototyping</p>
-          <button>View Project</button>
+          <button>View Project</button>-->
         </div>
         <div class="img2">
           <img src="images/cerritosSeniors.png" alt="cerritos seniors image">
         </div>
         <div class="content2">
           <h2>Cerritos Seniors</h2> 
-          <p>In the mist of the Covid outbreak, our group redesigned the website for the City of Cerritos Senior Center. Our focus? Accessibility. Help the community's disabled, senior users with inclusive design: less stress, squinting, confusion, and frustration. *<b>Fun Fact</b>: our team was accepted for a bid to redesign the actual City of Cerritos <a href="https://www.pewresearch.org/internet/2017/05/17/technology-use-among-seniors/">website</a>! More coming soon.</p> 
+          <p>Responsive re-design of City of Cerritos Seniors website</p>
+          <p>*<b>Fun Fact</b>: Our team was accepted for a bid to redesign the actual City of Cerritos <a href="https://www.pewresearch.org/internet/2017/05/17/technology-use-among-seniors/">website</a>! More coming soon.</p>
+          <!--<p>In the mist of the Covid outbreak, our group redesigned the website for the City of Cerritos Senior Center. Our focus? Accessibility. Help the community's disabled, senior users with inclusive design: less stress, squinting, confusion, and frustration. *<b>Fun Fact</b>: our team was accepted for a bid to redesign the actual City of Cerritos <a href="https://www.pewresearch.org/internet/2017/05/17/technology-use-among-seniors/">website</a>! More coming soon.</p> 
           <p><b>Primary Roles:</b> Lead UX Researcher, UX Product Designer (responsive wireframing & prototyping), Stakeholder Liaison</p>
-          <p><b>Keywords:</b> Accessibility, inclusive & responsive design, stakeholders, user research, user testing</p>
+          <p><b>Keywords:</b> Accessibility, inclusive & responsive design, stakeholders, user research, user testing</p>-->
           <button>View Project</button>
         </div>
         <div class="img3">
@@ -92,9 +99,11 @@
         </div>
         <div class="content3">
           <h2>BlinkTrip</h2>
-          <p>Although 2020 has been cancelled, here is BlinkTrip, a travel mobile app for the tired, busy, and overwhelmed user. Find out how I found the user persona's pain points and resolved her problems. *<b>Fun Fact</b>: If you're curious about the start of my UX journey and <s>mistakes</s> growth as a designer, this is it.</p>
+          <p>Travel Mobile App for the tired, busy, and overwhelmed user.
+        </br></br>*<b>Fun Fact</b>: If you're curious about the start of my UX journey and <s>mistakes</s> growth as a designer, this is it.</p>
+      <!--<p>Although 2020 has been cancelled, here is BlinkTrip, a travel mobile app for the tired, busy, and overwhelmed user. Find out how I found the user persona's pain points and resolved her problems. *<b>Fun Fact</b>: If you're curious about the start of my UX journey and <s>mistakes</s> growth as a designer, this is it.</p>
           <p><b>Primary Roles:</b> UX/UI Designer, UX Researcher</p>
-          <p><b>Keywords:</b> App design, UX design thinking, user research, user interviews, user persona, user testing</p>
+          <p><b>Keywords:</b> App design, UX design thinking, user research, user interviews, user persona, user testing</p>-->
           <button>View Project</button>
         </div>
       </div>
